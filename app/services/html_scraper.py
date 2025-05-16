@@ -130,7 +130,7 @@ async def parse_html_search(html: str) -> List[Dict]:
         result = {
             "state": STATE,
             "name": org_name,
-            "link": "https://apps.sos.wv.gov/business/corporations/" + org_link,
+            "url": "https://apps.sos.wv.gov/business/corporations/" + org_link,
             "id": cells[1].text.strip(),
         }
         results.append(result)
